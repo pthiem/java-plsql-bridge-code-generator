@@ -74,7 +74,6 @@ public class PlsqlJavaBridgeGenerator {
         //
         
         String generatorHome = args[0];
-        System.out.println(args[0]);
         String configFilename = args[1];
         Properties config = new Properties();
         FileInputStream in = new FileInputStream(configFilename);
