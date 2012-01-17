@@ -1,4 +1,6 @@
 create user core identified by core;
+grant connect to core;
+grant dba to core;
 
 CREATE TABLE core.plsql_bridge_test
 (
