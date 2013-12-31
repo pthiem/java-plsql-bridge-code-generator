@@ -43,8 +43,8 @@ create or replace PACKAGE BODY core.pkg_plsql_bridge_test AS
   procedure p_test_types_in_simple (
     fld_number_null         number,
     fld_number_value        number,
-    fld_number_float        rto_annual_fee.amt_paid%type,
-    fld_number_float_null   rto_annual_fee.amt_paid%type,
+    fld_number_float        plsql_bridge_test.fld_numeric_float_value%type,
+    fld_number_float_null   plsql_bridge_test.fld_numeric_float_value%type,
     fld_numeric_null        numeric,
     fld_numeric_value       numeric,
     fld_float               float,
@@ -76,8 +76,8 @@ create or replace PACKAGE BODY core.pkg_plsql_bridge_test AS
   procedure p_test_types_out_simple (
     fld_number_null         out number,
     fld_number_value        out number,
-    fld_number_float        out rto_annual_fee.amt_paid%type,
-    fld_number_float_null   out rto_annual_fee.amt_paid%type,
+    fld_number_float        out plsql_bridge_test.fld_numeric_float_value%type,
+    fld_number_float_null   out plsql_bridge_test.fld_numeric_float_value%type,
     fld_numeric_null        out numeric,
     fld_numeric_value       out numeric,
     fld_float               out float,
@@ -101,7 +101,7 @@ create or replace PACKAGE BODY core.pkg_plsql_bridge_test AS
     fld_float := 998.22;
     fld_double := 343.345;
     fld_varchar2 := 'asdfa wer vb';
-    fld_date := sysdate;
+    fld_date := TO_DATE('12/31/2013 09:11:43', 'MM/DD/YYYY HH24:MI:SS');
     fld_char := 'Y';
   
   end;
@@ -144,13 +144,13 @@ create or replace PACKAGE BODY core.pkg_plsql_bridge_test AS
     
 
   procedure p_test_number_decimal_simple (
-    a_in_null in rto_annual_fee.amt_paid%type ,
-    a_in_value in rto_annual_fee.amt_paid%type,
-    a_out_null out rto_annual_fee.amt_paid%type,
-    a_in_null_out_null in out rto_annual_fee.amt_paid%type,
-    a_in_value_out_null in out rto_annual_fee.amt_paid%type,
-    a_in_null_out_value in out rto_annual_fee.amt_paid%type,
-    a_in_value_out_value in out rto_annual_fee.amt_paid%type
+    a_in_null in plsql_bridge_test.fld_numeric_float_value%type ,
+    a_in_value in plsql_bridge_test.fld_numeric_float_value%type,
+    a_out_null out plsql_bridge_test.fld_numeric_float_value%type,
+    a_in_null_out_null in out plsql_bridge_test.fld_numeric_float_value%type,
+    a_in_value_out_null in out plsql_bridge_test.fld_numeric_float_value%type,
+    a_in_null_out_value in out plsql_bridge_test.fld_numeric_float_value%type,
+    a_in_value_out_value in out plsql_bridge_test.fld_numeric_float_value%type
     )
   is
   begin
@@ -251,4 +251,5 @@ create or replace PACKAGE BODY core.pkg_plsql_bridge_test AS
     null;
   end;
   
-end;  
+end;
+  

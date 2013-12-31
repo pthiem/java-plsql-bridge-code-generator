@@ -55,8 +55,8 @@ as
   procedure p_test_types_in_simple (
     fld_number_null         number,
     fld_number_value        number,
-    fld_number_float        rto_annual_fee.amt_paid%type,
-    fld_number_float_null   rto_annual_fee.amt_paid%type,
+    fld_number_float        plsql_bridge_test.fld_numeric_float_value%type,
+    fld_number_float_null   plsql_bridge_test.fld_numeric_float_value%type,
     fld_numeric_null        numeric,
     fld_numeric_value       numeric,
     fld_float               float,
@@ -76,8 +76,8 @@ as
   procedure p_test_types_out_simple (
     fld_number_null         out number,
     fld_number_value        out number,
-    fld_number_float        out rto_annual_fee.amt_paid%type,
-    fld_number_float_null   out rto_annual_fee.amt_paid%type,
+    fld_number_float        out plsql_bridge_test.fld_numeric_float_value%type,
+    fld_number_float_null   out plsql_bridge_test.fld_numeric_float_value%type,
     fld_numeric_null        out numeric,
     fld_numeric_value       out numeric,
     fld_float               out float,
@@ -111,13 +111,13 @@ as
     a_in_value_out_value in out number);
 
   procedure p_test_number_decimal_simple (
-    a_in_null in rto_annual_fee.amt_paid%type ,
-    a_in_value in rto_annual_fee.amt_paid%type,
-    a_out_null out rto_annual_fee.amt_paid%type,
-    a_in_null_out_null in out rto_annual_fee.amt_paid%type,
-    a_in_value_out_null in out rto_annual_fee.amt_paid%type,
-    a_in_null_out_value in out rto_annual_fee.amt_paid%type,
-    a_in_value_out_value in out rto_annual_fee.amt_paid%type);
+    a_in_null in plsql_bridge_test.fld_numeric_float_value%type ,
+    a_in_value in plsql_bridge_test.fld_numeric_float_value%type,
+    a_out_null out plsql_bridge_test.fld_numeric_float_value%type,
+    a_in_null_out_null in out plsql_bridge_test.fld_numeric_float_value%type,
+    a_in_value_out_null in out plsql_bridge_test.fld_numeric_float_value%type,
+    a_in_null_out_value in out plsql_bridge_test.fld_numeric_float_value%type,
+    a_in_value_out_value in out plsql_bridge_test.fld_numeric_float_value%type);
 
   procedure p_test_numeric_simple (
     a_in_null in numeric,

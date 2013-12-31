@@ -1,1 +1,0 @@
-call "..\..\Generator\bin\Generate_Code.bat" CodeGenerator.properties core pkg_plsql_bridge_test
