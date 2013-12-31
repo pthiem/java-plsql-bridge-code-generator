@@ -403,8 +403,8 @@ Only common PL/SQL types handled.
 * Documentation.
 * Unit tests.
 * Support annotations for Spring transactions.
-* Support annotations for standard EJB 3.0.
-* Support annotations for web services EJB 3.0.
+* Generate code to expose PL/SQL as Web Services
+* Generate code to expose PL/SQL as REST Services with Javascript helpers.
 * Improve type support.
 * Document type support.
 * Configuration for different names for java versions of packages and procedures, ie underscore removal, camel case.
