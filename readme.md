@@ -31,7 +31,7 @@ Generate all the JDBC from PL/SQL package specifications, and get on with making
 
 <a name="download_now">
 # Download Now
-[java-plsql-bridge-code-generator-1.0-bin.zip](https://github.com/downloads/pthiem/java-plsql-bridge-code-generator/releases/download/1.0/java-plsql-bridge-code-generator-1.0-bin.zip)
+[java-plsql-bridge-code-generator-1.0-bin.zip](https://github.com/pthiem/java-plsql-bridge-code-generator/releases/download/1.0/java-plsql-bridge-code-generator-1.0-bin.zip)
 
 <a name="features"/>
 # Features
