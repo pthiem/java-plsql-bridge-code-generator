@@ -10,6 +10,10 @@
 		<format>zip</format>
 	</formats>
 	<files>
+        <file>
+            <source>../README.md</source>
+            <outputDirectory></outputDirectory>
+        </file>
 		<file>
 			<source>../runtime/target/jpbcg-runtime-${project.version}.jar</source>
 			<outputDirectory></outputDirectory>
@@ -19,12 +23,12 @@
 	<fileSets>
 		<fileSet>
 			<directory>../generator/target/appassembler</directory>
-			<outputDirectory>generator-${project.version}</outputDirectory>
+			<outputDirectory>generator</outputDirectory>
 		</fileSet>
 
 		<fileSet>
 			<directory>../quickstart</directory>
-			<outputDirectory>quickstart-${project.version}</outputDirectory>
+			<outputDirectory>quickstart</outputDirectory>
 			<includes>
 				<include>generate/**</include>
 				<include>generator/**</include>

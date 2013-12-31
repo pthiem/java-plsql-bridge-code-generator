@@ -16,7 +16,7 @@
 
 	<build>
 
-		<finalName>jpbcg-${project.version}</finalName>
+		<finalName>java-plsql-bridge-code-generator-${project.version}</finalName>
 		<plugins>
 
 			<!-- Skip Jar, only want the zip -->

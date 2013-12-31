@@ -104,10 +104,14 @@
 				<version>7.1.1.Final</version>
 			</plugin>
 
-			<!-- Create user before running (runs as user "core" with password "core"): 
-				create user core identified by core; grant connect to core; grant dba to 
-				core; To install: mvn liquibase:update To uninstall: mvn liquibase:rollback 
-				-Dliquibase.rollbackCount=2 -->
+			<!-- 
+			Create user before running (runs as user "core" with password "core"): 
+				create user core identified by core; 
+				grant connect to core; 
+				grant dba to core; 
+			To install: mvn liquibase:update 
+			To uninstall: mvn liquibase:rollback -Dliquibase.rollbackCount=2 
+			-->
 			<plugin>
 				<groupId>org.liquibase</groupId>
 				<artifactId>liquibase-maven-plugin</artifactId>
