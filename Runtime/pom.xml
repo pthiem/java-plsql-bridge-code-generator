@@ -7,7 +7,7 @@
 	<parent>
 		<groupId>org.jpbcg</groupId>
 		<artifactId>jpbcg-multimodule</artifactId>
-		<version>1.1-SNAPSHOT</version>
+		<version>1.0</version>
 		<relativePath>../multimodule/pom.xml</relativePath>
 	</parent>
 
@@ -73,8 +73,11 @@
 						</goals>
 						<configuration>
 							<target name="copy-runtime-library-to-quickstart">
+								<delete>
+								    <fileset dir="../quickstart/generate/java-plsql-bridge-code-generator-${project.version}-bin" includes="${project.artifactId}-*.jar"/>
+								</delete>							
 								<copy file="target/${project.artifactId}-${project.version}.jar"
-									todir="../quickstart/lib" />
+									todir="../quickstart/generate/java-plsql-bridge-code-generator-${project.version}-bin" />
 							</target>
 						</configuration>
 					</execution>

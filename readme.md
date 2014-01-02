@@ -9,6 +9,13 @@ Code Generation of a PL/SQL data access layer (aka DAO), and more, for Java appl
 
 Generate all the JDBC from PL/SQL package specifications, and get on with making your application awesome.
 
+Project URLs:
+
+* [Readme](https://github.com/pthiem/java-plsql-bridge-code-generator/blob/master/readme.md)
+* [Github](https://github.com/pthiem/java-plsql-bridge-code-generator)
+* [Issues](https://github.com/pthiem/java-plsql-bridge-code-generator/issues)
+* [Releases](https://github.com/pthiem/java-plsql-bridge-code-generator/releases)
+
 <a name="toc"/>
 # Table of Contents
 
@@ -20,7 +27,7 @@ Generate all the JDBC from PL/SQL package specifications, and get on with making
 * [The Solution](#the_solution)
 * [Example Developer Cycle](#example_developer_cycle)
 * [Run the Quickstart](#run_the_quickstart)
-* [Integrating with a Spring](#integrating_spring)
+* [Integrating with Spring](#integrating_spring)
 * [Integrating with a Web Service](#integrating_web_service)
 * [Integrating with REST and JavaScript](#code_generation_for_rest_and_javascript)
 * [About](#about)
@@ -142,7 +149,7 @@ Extract zip project to a directory (here after referred to as ...).
     
 6. Install the runtime Jar into your local repository
 
-        cd ...\quickstart\lib
+        cd ...\quickstart\generate\java-plsql-bridge-code-generator-1.0-bin
         mvn org.apache.maven.plugins:maven-install-plugin:2.5.1:install-file -Dfile=jpbcg-runtime-1.0.jar
         
     Note explicitly using version 2.5.1 of the maven-install-plugin so that it will use the pom in the jar to configure the installation. 
@@ -327,11 +334,12 @@ Compile your source.
 Execute your code.
 
 <a name="integrating_spring"/>
-# Integrating with a Spring
+# Integrating with Spring
 
 * Not yet implemented.
 * You can help!
-* Need to extend templates (annotation usage) and for new target platform option.
+* Need to extend templates (annotation usage) and for new target platform option (i.e. Add "Service" import and annotation to package class).
+* Should be a few lines of code, but testing is required.
 * Need to extend the executor to get the data source correctly.
 
 <a name="integrating_web_service"/>

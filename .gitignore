@@ -3,3 +3,4 @@
 *.settings
 deleted/
 target/
+*.versionsBackup
