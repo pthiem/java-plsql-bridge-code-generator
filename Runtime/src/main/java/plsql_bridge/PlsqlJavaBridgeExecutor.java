@@ -340,7 +340,8 @@ public class PlsqlJavaBridgeExecutor {
 
 					} else if (javaFieldType.equals(byte[].class)) {
 
-						// TODO set blob, not tested
+						// Set BLOB, this has not been tested, unknown if it
+						// works.
 						if (value == null) {
 							stmt.setNull(i + 1, OracleTypes.BLOB);
 						} else {
@@ -578,7 +579,7 @@ public class PlsqlJavaBridgeExecutor {
 
 						} else if (javaFieldType.equals(java.util.List.class)) {
 
-							rs = (ResultSet) stmt.getObject(i + 1);
+							rs = (ResultSet) value;
 
 							List resultList = new ArrayList();
 
