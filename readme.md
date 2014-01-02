@@ -107,9 +107,9 @@ This demo can be run as a standalone program, junit and web application (with EJ
 
 Dependent on Maven.
 
-Extract zip project to a directory (here after referred to as ...).
+1. Extract zip project to a directory (here after referred to as ...).
 
-1.  Setup DB user for demo (this quickstart likes to run as user core with password core):
+1. Setup DB user for demo (this quickstart likes to run as user core with password core):
 
         create user core identified by core;
         grant connect to core;
@@ -197,20 +197,20 @@ Extract zip project to a directory (here after referred to as ...).
         Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.352 sec
         <snip>     
 
-8. Run the quickstart (via Console):
+9. Run the quickstart (via Console):
 
     * Import the project into Eclipse or other IDE.
     * Run class quickstart.Main.
     * Console output should be similar to the test output.
 
-9. Run the code (via Web application):
+10. Run the code (via Web application):
 
     * Import the project into Eclipse or other IDE.
     * Deploy the project to JBoss or similar container.
     * Execute page http://localhost:8080/jpbcg-quicstart
     * Ouput should be similar to the test output.
 
-10. Regenerate the code:
+11. Regenerate the code:
 
         cd ...\quickstart
         generate\generate_pkg_plsql_bridge_test.bat
@@ -236,7 +236,7 @@ Extract zip project to a directory (here after referred to as ...).
         Generating ../src/main/java/plsql_bridge/pkg_plsql_bridge_test/P_test_varchar2_simple_arguments.java
         <snip>    
 
-11. Alter the packages:
+12. Alter the packages:
 
     * Add new method to ...\quickstart\sql\pkg\_plsql\_bridge\_test.pks
     * Add new method to ...\quickstart\sql\pkg\_plsql\_bridge\_test.pkb
